@@ -25,7 +25,7 @@ for (i = 0; i<raphPayments.length; i++) {
 
 const raphBigPayments = raphPayments.filter( value => value > 100);
 
-console.log(raphPayments , raphTips , raphTotals , raphBigPayments);
+console.log(`Raph's payments were ${raphPayments}. The tips he paid were ${raphTips}. The totals he paid were ${raphTotals}. The payments he made over $100 were ${raphBigPayments}.`);
 
 
 
