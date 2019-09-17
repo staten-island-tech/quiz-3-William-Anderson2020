@@ -1,4 +1,38 @@
-const raphPayment = [140, 45, 270];
+const raphPayments = [140, 45, 270];
+function tipCalculator(bill){
+	let percentage;
+	if (bill < 50){
+		percentage = .2;
+	} else if (bill >= 50 && bill<200){
+		percentage = .15;
+	}else if (bill >= 200){
+		percentage = .1;
+	}
+	return bill * percentage;
+}
+
+let raphTips = [];
+
+for ( i = 0; i < raphPayments.length; i++) {
+	raphTips.push(tipCalculator(raphPayments[i]));
+}
+
+let raphTotals = [];
+
+for (i = 0; i<raphPayments.length; i++) {
+	raphTotals.push(raphPayments[i] + raphTips[i]);
+}
+
+const raphBigPayments = raphPayments.filter( value => value > 100);
+
+console.log(raphPayments , raphTips , raphTotals , raphBigPayments);
+
+
+
+
+
+
+/* const raphPayment = [140, 45, 270];
 function tipCalculator(bill){
     // switch (bill) {
     //     case (bill < 50):
