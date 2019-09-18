@@ -6,7 +6,6 @@ const dejon = {
     bmi : function() {
     return this.mass / (this.height * this.height);
     },
-    // bmi = this.getBMI()
 };
 
 dejon.bmi();
@@ -19,7 +18,6 @@ const rob = {
     bmi : function() {
     return this.mass / (this.height * this.height);
     },
-    // bmi = this.getBMI()
 };
 
 rob.bmi();
