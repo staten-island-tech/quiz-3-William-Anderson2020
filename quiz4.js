@@ -29,3 +29,4 @@ if (dejon.bmi() > rob.bmi()){
 } else if (dejon.bmi() == rob.bmi()){
     console.log(`Their BMIs are equal.`);
 }
+
